@@ -3,7 +3,15 @@
     margin: 0;
     padding: 0;
 }
-/* #fbfbfb */
+
+.dark{
+    background-color: #fc8507;
+}
+
+.white{
+    background-color: #fd9d2a;
+}
+
 /* пустая строка */
 .none{
     height: 20px;
@@ -12,26 +20,18 @@
 /* Шапка */
 .head_block{
     width: 100%;
-    height: 65px;
-    background: linear-gradient(0deg, #fc8507 0%, #ffa218);
+    height: 70px;
     display: flex;
+    position: fixed;
     justify-content: space-around;
-}
-
-.catalog_search{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .catalog_block{
-    background: linear-gradient(0deg, #fc8507 0%, #ffa218);
     width: 33%;
-    height: 100%;
+    height: 80%;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
 }
 
 .site_name{
@@ -56,39 +56,98 @@
     height: 100%;
 }
 
-.catalog_block{
-    background-color: #fd9d2a;
+.catalog_block2{
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 0;
+    width: 100%;
+    border-radius: 20px;
 }
 
-.catalog_block p{
+.catalog_block2 p{
     height: fit-content;
     width: 100%;
+    text-align: center;
     font-size: 22px;
     color: white;
 }
 
 .search_block{
     width: 50%;
-    height: 100%;
+    height: 80%;
     background-color: #f7f7f7;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 .search_block input{
     background-color: #f7f7f7;
+    font-size: 18px;
     border: none;
-    width: 80%;
+    width: 93%;
     height: 80%;
-    border-radius: 10px;
     outline:none;
 }
 
+.content{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
 
+.sidebar{
+    width: 20%;
+    height: 90%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.content_body{
+    width: 80%;
+    height: 100%;
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+  
+.active, .accordion:hover {
+    background-color: #fc8507;
+}
+  
+.panel {
+    padding: 0 18px;
+    width: 80%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-button { 
+    display:none;
+}
