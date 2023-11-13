@@ -7,8 +7,9 @@
     <title>Каталог</title>
 </head>
 <body>
-    <div class="head_block white">
-            <div class="catalog_block dark">
+    <div class="content">
+        <div class="head_block white">
+            <div class="catalog_block dark shad">
                 <div class="site_name">
                     <p>Электрон&Ko</p>
                 </div>
@@ -18,27 +19,39 @@
                     </div>
                 </div>
             </div>
-            <div class="search_block">
+            <div class="search_block shad">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg>
                 <input type="text" placeholder="Поиск по сайту">
             </div>
     </div>
 
-    <div class="content">
-        <div class="sidebar dark">
+    <div class="contentt">
+        <div class="sidebar shad">
             <button class="accordion white">Каталог</button>
             <div class="panel dark">
-                <button class="accordion white">Бытовая техника</button>
-                <button class="accordion white">Смартфоны</button>
-                <button class="accordion white">Пк,ноутбуки</button>
-                <button class="accordion white">Комплектующие</button>
+                <button class="accordion white fd">Бытовая техника</button>
+                <div class="panel dark choise">
+                    <div class="bt white">
+                        <input type="radio" id="bt1" name="bt" class="nn">
+                        <label for="bt1">Холодильники</label>
+                    </div>
+                    <div class="bt">
+                        <input type="radio" id="bt2" name="bt" class="nn">
+                        <label for="bt2">Стиралки</label>
+                    </div>
                 </div>
+                <button class="accordion white fd">Смартфоны</button>
+                <button class="accordion white fd">Пк,ноутбуки</button>
+                <button class="accordion white fd">Комплектующие</button>
             </div>
         </div>
-        <div class="content_body">
+        <div class="content_body shad">
 
         </div>
     </div>
+    </div>
+    
+        
     <script src="scripts/script.js"></script>
 </body>
 </html>
